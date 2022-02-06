@@ -7,13 +7,11 @@ const Card = ({imgUrl, title, onPress}) => {
     <>
       <TouchableOpacity onPress={onPress}>
         <View>
-          <Text style={styles.title}>
-            {'This is a very long text in the view'}
-          </Text>
+          <Text style={styles.title}>{title}</Text>
           <Image
             style={styles.image}
             source={{
-              uri: 'https://live.staticflickr.com/65535/51857733759_c1c9ab14d0.jpg',
+              uri: imgUrl,
             }}
           />
         </View>
